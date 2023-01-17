@@ -13,6 +13,12 @@ variables:
   anyTfChanges: false
 
 steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'spnconn'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az group list --o table'
 - task: TerraformInstaller@0
   displayName: install Terraform latest version
   inputs:
