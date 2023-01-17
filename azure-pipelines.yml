@@ -7,7 +7,7 @@ pool:
 variables:
   subscription: Pay-As-You-Go
   resourceGroup: rg_eastus_89125_1_16739400851525
-  storageAccount: terraformtfstateskip
+  storageAccount: terraformtabitha
   container: tfstate
   tfstateFile: terraform.tfstate
   anyTfChanges: false
